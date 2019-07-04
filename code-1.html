@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 1</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,11 +27,14 @@
                     <ul class="nav justify-content-center fixed-top navy">
                         <!--start of navigation-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a> </li>
+                            <a class="nav-link color-custom" href="#Home">Home</a> </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#article">2</a></li>
+                            <a class="nav-link color-custom" href="form.html">Sign Up</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#spendinglist">Spending List</a></li>
+                            <a class="nav-link color-custom" href="#Tips">Tips</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link color-custom" href="table.html">Expense Tracker</a>
+                        </li>
                 </div>
 
                 </ul>
@@ -36,15 +42,21 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="erik-mclean-I9qcFjyuJGw-unsplash.jpg" class="d-block w-100" alt="supreme gun <br>  Beware of little expenses; a small leak will sink a great ship. -Benjamin Franklin" height="500">
+                <img src="image/erik-mclean-I9qcFjyuJGw-unsplash.jpg" class="d-block w-100" alt="supreme gun <br>  Beware of little expenses; a small leak will sink a great ship. -Benjamin Franklin" height="500">
                 <div class="carousel-caption">
                     <h3 class= caption>"Beware of little expenses; a small leak will sink a great ship."</h3>
-                    <p class= caption>-Benjamin Franklin</p>
+                    <p class= "caption">-Benjamin Franklin</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="image/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg" class="d-block w-100" alt="..." height="500">
+                <div class="carousel-caption">
+                    <h3 class= "captionb">
+                        “A budget is telling your money where to go instead of wondering where it went.”</h3>
+                        <p class= captionb> –Dave Ramsey</p>
+                    </div>
               </div>
+
               <div class="carousel-item">
                 <img src="..." class="d-block w-100" alt="...">
               </div>
@@ -67,30 +79,7 @@
             </p>
 
     </div>
-
-
-    <form>
-
-    </form>
-
-    <table class="table table-striped spendinglist" id="spendinglist">
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Description<strong></th>
-            <th><strong>Amount</strong></th>
-            <th><strong>Date</strong></th>
-            <th><strong>Update</strong></th>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td><button type="button" class="btn btn-light">Update</button>
-            </td>
-        </tr>
-    </table>
-    <div class= container-fluid>
+    <div class= container-fluid id="tips">
             <h2>Tips On Saving Money</h2>
             <ol>
                 <li>
@@ -105,6 +94,7 @@
 
 
     </div>
+
 
 </body>
 
