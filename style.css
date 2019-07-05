@@ -29,15 +29,18 @@ h1{
 }
 .captionb{
     opacity: 1;
-    color: 
+    
+}
+
+.captionc{
+    opacity: 0.8;
 }
 
 h2{
-    text-align: center
+    text-align: center !important;
 
 }
 
 p{
-    text-align: center !important
+    text-align: center !important;
 }
-    

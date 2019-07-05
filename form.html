@@ -1,83 +1,134 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Sign In</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    </head>
-    <body>
-            <div class= container-fluid width="200">
-            
-                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                            <a class="navbar-brand" href="code-1.html">SaveExpert</a>
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link" href="form.html">Sign Up</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="code-1.html#Tips">Tips</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="table.html">Expense Tracker</a>
-                              </li>
-                            </ul>
-                          </nav>
-    
-            </div>
-               <div class= container-fluid jumbotron >
-                <h2>Expense Tracker Sign In form</h2><br><br>
-        
-                <div class= row>
-                    <div class= col-md-6>
-                        <h4> <em>Sign in:</em></h4>
-                        <form action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                        </div>
-                        <div class="form-group form-check">
-                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                            
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <div class=container-fluid width="200">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html">SaveExpert</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Tips">Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">Expense Tracker</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class=container-fluid jumbotron>
+        <h2>Expense Tracker Sign In form</h2><br><br>
+
+        <div class=row>
+            <div class=col-md-6>
+                <h4> <em>Sign in:</em></h4>
+                <form action="table.html" class="needs-validated">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required="required" placeholder="Enter email" name="email">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out Email.</div>
                     </div>
-                    <div class= "col-md-6" style=" border-left: 1px solid black !important;">
-                            <h4> <em>Sign Up:</em></h4>
-                            <form action="/action_page.php">
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                                
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" required="required" placeholder="Enter password" name="pswd">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out Password.</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" required="required" name="remember"> Remember me
 
                     </div>
-                   
-              </div>
-              
-              </div>
-              
-       
-    </body>
+                    <div class="row-md-1">
+                        <div class="form-group form-check">
+                            <input class="form-check-input" type="checkbox" required="required" name="agree"> Agree to Terms and
+                            Conditions
+                             <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" href="table.html">Submit</button>
+
+
+
+                </form>
+
+                </form>
+            </div>
+            <div class="col-md-6" style=" border-left: 1px solid black !important;">
+                <h4> <em>Terms and Conditions:</em></h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum sapien enim, quis
+                    consectetur lacus viverra sed. Nulla facilisi. Etiam elementum mauris quam, quis congue odio commodo
+                    lacinia. Duis euismod elementum est et condimentum. Sed imperdiet pharetra justo ut sollicitudin.
+                    Cras viverra metus nec turpis vehicula tempus. Nam eu urna nisl. Maecenas interdum, nibh ut egestas
+                    finibus, diam elit rutrum erat, et semper ligula magna quis lorem. Phasellus et tincidunt mi. Fusce
+                    ipsum nunc, ultrices quis sem id, molestie vehicula quam. Praesent pretium maximus elit. Curabitur
+                    non ex venenatis, maximus eros eget, pulvinar neque.
+
+                    Donec sed nibh vel diam laoreet dignissim. In non sem quis arcu efficitur viverra. Morbi lacinia dui
+                    eget est ultricies, non commodo lorem varius. Cras in magna finibus, dapibus eros eget, tincidunt
+                    risus. Nullam sed dui auctor, pharetra purus dignissim, fringilla quam. Curabitur eget aliquam ex.
+                    Fusce sodales velit ac metus gravida, facilisis accumsan nibh mollis. Proin vehicula auctor
+                    suscipit. Nulla facilisi. Suspendisse sed neque porta, malesuada odio et, viverra mi. Ut in aliquet
+                    sapien. Fusce vitae pharetra lacus. Nullam feugiat, mi faucibus feugiat accumsan, nisi neque
+                    hendrerit sem, quis posuere sapien ex et ante.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum urna ac est pulvinar, ut
+                    laoreet lorem mattis. Pellentesque augue justo, blandit eget vestibulum sed, semper vitae sapien.
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur
+                    condimentum mauris eget ligula varius, vitae finibus lacus ornare. Sed posuere nibh et arcu ornare
+                    aliquam. Sed vestibulum eu nulla et luctus. Duis vel finibus sem. Praesent lacus massa, volutpat vel
+                    risus non, porttitor blandit tellus. Integer aliquet dui eget mi sagittis vulputate. Nulla
+                    pellentesque lacinia pharetra.
+
+                    Integer nec condimentum sem. Aliquam pretium, elit ut faucibus dictum, tellus nulla cursus nunc, at
+                    blandit lorem nisl vel augue. Sed pellentesque ligula est. Fusce vel tincidunt velit. Maecenas a
+                    augue id nunc ullamcorper facilisis. Aliquam ultrices elit ac vulputate posuere. Aenean malesuada
+                    porta velit in placerat. Maecenas elementum tincidunt commodo. Vestibulum purus ex, congue at sapien
+                    non, vulputate efficitur nisi. Nullam vel turpis nunc. Nam mi nisl, porta non nunc vel, mollis
+                    pretium magna. Integer ac urna sit amet odio aliquam condimentum at quis felis. Etiam facilisis
+                    risus nisi, vel tristique eros efficitur eget.
+
+                    Sed et imperdiet odio. Nam commodo volutpat augue, et fermentum risus vestibulum at. Duis iaculis,
+                    justo non commodo ullamcorper, neque elit tincidunt dui, et fermentum nisi neque nec ex. Proin
+                    sollicitudin euismod ante ac pharetra. Vestibulum semper lorem non odio malesuada blandit.
+                    Vestibulum sit amet dui purus. Phasellus rutrum purus sit amet est vestibulum, imperdiet
+                    pellentesque turpis aliquam.
+
+                </h6>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>
